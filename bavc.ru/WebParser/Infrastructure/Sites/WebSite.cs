@@ -28,7 +28,6 @@ namespace WebParser.Infrastructure.Sites
             bool IsAbsoluteUrl = Uri.TryCreate(_siteRelativeUri, UriKind.Absolute, out uri);
             uri = IsAbsoluteUrl ? new Uri(_siteRelativeUri) : new Uri(_uri, _siteRelativeUri);
             return uri;
-            //uri=uri
         }
     }
 }
