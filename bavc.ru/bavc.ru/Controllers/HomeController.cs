@@ -13,6 +13,7 @@ namespace bavc.ru.Controllers
 
         public ActionResult Index()
         {
+            //Это slave v1.0 branch
             return View();
         }
 
