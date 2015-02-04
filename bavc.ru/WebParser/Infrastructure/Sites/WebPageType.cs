@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WebParser.Infrastructure.Sites
 {
-    enum WebPageType
+    public enum WebPageType
     {
         Main,
         Catalog,

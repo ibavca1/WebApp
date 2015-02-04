@@ -10,7 +10,7 @@ using WebParser.Infrastructure.Sites;
 
 namespace WebParser.ServerRequest
 {
-    class RequestServer
+    public class RequestServer
     {
         private Uri _uri;
         private readonly WebPageType _pageType;
@@ -32,7 +32,7 @@ namespace WebParser.ServerRequest
             _requestType = requestType;
         }
 
-        public static virtual RequestServer Create<TPageType, TRequestType>(TPageType pageType, TRequestType requestType, Uri uri)
+        public static RequestServer Create<TPageType, TRequestType>(TPageType pageType, TRequestType requestType, Uri uri)
         {
             return new RequestServer(
                 ((WebPageType)Convert.ToInt32(pageType)),
@@ -44,7 +44,7 @@ namespace WebParser.ServerRequest
         #region Определение свойств WebPageRequest
         public virtual Uri Uri { get; set; }
 
-        public virtual CookieCollection Coolies { get; set; }
+        public virtual CookieCollection Cookies { get; set; }
 
         public virtual string Method { get; set; }
 
