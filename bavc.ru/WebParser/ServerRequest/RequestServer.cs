@@ -46,7 +46,17 @@ namespace WebParser.ServerRequest
 
         public virtual CookieCollection Cookies { get; set; }
 
-        public virtual string Method { get; set; }
+        public virtual string Method
+        {
+            get
+            {
+                return _method;
+            }
+            set
+            {
+                _method = value;
+            }
+        }
 
         public virtual string ContentType { get; set; }
 

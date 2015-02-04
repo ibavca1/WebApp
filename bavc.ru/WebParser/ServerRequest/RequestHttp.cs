@@ -18,7 +18,7 @@ namespace WebParser.ServerRequest
 
         private readonly RequestServer _requestServer;
 
-        public RequestHttp()
+        private RequestHttp()
         {
             _requestType = RequestType.Http;
             _requestServer = RequestServer.Create(_pageType, _requestType, _uri);
