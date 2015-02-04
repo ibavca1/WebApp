@@ -13,6 +13,10 @@ namespace WebParser.Infrastructure.Sites
 {
     public abstract class WebSite
     {
+        public abstract int Id { get; }
+
+        private List<WebPage> WebPages = new List<WebPage>();
+
         public abstract Encoding Encoding { get; }
 
         public abstract Uri Uri { get; }
@@ -28,6 +32,31 @@ namespace WebParser.Infrastructure.Sites
             bool IsAbsoluteUrl = Uri.TryCreate(_siteRelativeUri, UriKind.Absolute, out uri);
             uri = IsAbsoluteUrl ? new Uri(_siteRelativeUri) : new Uri(_uri, _siteRelativeUri);
             return uri;
+        }
+
+        public virtual WebPage GetPage(int _id)
+        {
+            return new WebPage();
+        }
+
+        public virtual WebPage GetPage(int _id, string _status)
+        {
+            return new WebPage();
+        }
+
+        public virtual WebPage AddPage<TPageType>(int _id,TPageType _type,string _uri)
+        {
+            WebPage _page = new WebPage();
+            _page.Id = _id;
+            _page.Uri = _uri;
+            WebPageType _pageType = (WebPageType)Convert.ToInt32(_type);
+            _page.PageType = _pageType;
+            return _page;
+        }
+
+        public virtual void AddPage(WebPage _webPage)
+        {
+            WebPages.Add(_webPage);
         }
     }
 }

@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace WebParser.Infrastructure.Sites
 {
-    class WebPage
+    public class WebPage
     {
+        public int Id { get; set; }
+        public string Uri { get; set; }
+        public WebPageType PageType { get; set; }
+        public string Content { get; set; }
     }
 }

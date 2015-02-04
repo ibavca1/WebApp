@@ -85,8 +85,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Infrastructure\Sites\WebPage.cs" />
+    <Compile Include="Infrastructure\Sites\WebPageType.cs" />
     <Compile Include="Infrastructure\Sites\WebSite.cs" />
     <Compile Include="Infrastructure\Sites\WebSiteMetadata.cs" />
+    <Compile Include="ServerRequest\RequestServer.cs" />
+    <Compile Include="ServerRequest\RequestHttp.cs" />
+    <Compile Include="ServerRequest\RequestType.cs" />
     <Compile Include="WebParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
