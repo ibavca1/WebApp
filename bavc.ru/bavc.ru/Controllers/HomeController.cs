@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebParser;
 
 namespace bavc.ru.Controllers
 {
@@ -13,7 +14,7 @@ namespace bavc.ru.Controllers
 
         public ActionResult Index()
         {
-            //Это master branche
+            //Это slave v1.0 branch
             return View();
         }
 
