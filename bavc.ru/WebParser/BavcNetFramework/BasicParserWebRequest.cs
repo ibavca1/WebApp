@@ -21,10 +21,50 @@ namespace WebParser.BavcNetFramework
         private CookieCollection _cookies;
         
         #region Свойства
-        public string Accept { get; set; }
-        public string Method { get; set; }
-        public string UserAgent { get; set; }
-        public Uri Uri { get; set; }
+        public string Accept
+        {
+            get
+            {
+                return _accept;
+            }
+            set
+            {
+                _accept = value;
+            }
+        }
+        public string Method 
+        {
+            get
+            {
+                return _method;
+            }
+            set
+            {
+                _method = value;
+            }
+        }
+        public string UserAgent
+        {
+            get
+            {
+                return _userAgent;
+            }
+            set
+            {
+                _userAgent = value;
+            }
+        }
+        public Uri Uri 
+        {
+            get
+            {
+                return _uri;
+            }
+            set
+            {
+                _uri = value;
+            }
+        }
         public CookieCollection Cookies
         {
             get
