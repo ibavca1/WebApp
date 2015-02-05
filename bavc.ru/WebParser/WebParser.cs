@@ -9,4 +9,9 @@ namespace WebParser
     public class WebParser
     {
     }
+
+    public class WebParserRequest
+    {
+
+    }
 }
