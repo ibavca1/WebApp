@@ -84,6 +84,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BavcNetFramework\BasicParserWebRequest.cs" />
+    <Compile Include="BavcNetFramework\DataTypes\WebReqestType.cs" />
+    <Compile Include="BavcNetFramework\HttpParserWebRequest.cs" />
+    <Compile Include="BavcNetFramework\Interfaces\IParserWebRequest.cs" />
     <Compile Include="WebParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
