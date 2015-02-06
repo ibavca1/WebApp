@@ -16,9 +16,12 @@ namespace UnitTestWebParser
         [TestMethod]
         public void TestMethodCreate()
         {
-            BasicParserWebRequest basicParser = new BasicParserWebRequest(WebRequestType.Http, new Uri("http://google.com"));
-            HttpParserWebRequest httpParser = new HttpParserWebRequest();
-            WebPageContent content = httpParser.LoadPageContent(basicParser, Encoding.UTF8, TimeSpan.FromSeconds(1));
+            Parser _parser = new Parser(WebRequestType.Http);
+            //HttpParserWebRequest httpParser = new HttpParserWebRequest();
+            var _p = _parser.ParserWebRequest;
+            var _t = _p.GetType();
+            WebPageContent content = ((HttpParserWebRequest)_parser.ParserWebRequest).LoadPageContent(_parser, Encoding.UTF8, TimeSpan.FromSeconds(1));
+            //WebPageContent content = httpParser.LoadPageContent(_parser, Encoding.UTF8, TimeSpan.FromSeconds(1));
             Assert.IsNotNull(content);
         }
     }

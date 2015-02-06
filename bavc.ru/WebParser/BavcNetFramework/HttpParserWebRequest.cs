@@ -7,10 +7,16 @@ using System.IO;
 using System.Net;
 using System.Web;
 
+using WebParser.BavcNetFramework.DataTypes;
+using WebParser.BavcNetFramework.Interfaces;
+
 namespace WebParser.BavcNetFramework
 {
     public class HttpParserWebRequest
     {
+        #region Свойства
+        public WebRequestType RequestType { get { return WebRequestType.Http; } }
+        #endregion
 
         #region LoadPageContent
         /// <summary>

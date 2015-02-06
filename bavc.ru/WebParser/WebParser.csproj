@@ -88,6 +88,8 @@
     <Compile Include="BavcNetFramework\DataTypes\WebReqestType.cs" />
     <Compile Include="BavcNetFramework\HttpParserWebRequest.cs" />
     <Compile Include="BavcNetFramework\Interfaces\IParserWebRequest.cs" />
+    <Compile Include="BavcNetFramework\JsonParserWebRequest.cs" />
+    <Compile Include="BavcNetFramework\Parser.cs" />
     <Compile Include="WebParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
