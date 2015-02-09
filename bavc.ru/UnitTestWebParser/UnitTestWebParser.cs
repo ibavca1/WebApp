@@ -16,12 +16,14 @@ namespace UnitTestWebParser
         [TestMethod]
         public void TestMethodCreate()
         {
-            Parser _parser = new Parser(WebRequestType.Http);
-            //HttpParserWebRequest httpParser = new HttpParserWebRequest();
-            var _p = _parser.ParserWebRequest;
-            var _t = _p.GetType();
-            WebPageContent content = ((HttpParserWebRequest)_parser.ParserWebRequest).LoadPageContent(_parser, Encoding.UTF8, TimeSpan.FromSeconds(1));
-            //WebPageContent content = httpParser.LoadPageContent(_parser, Encoding.UTF8, TimeSpan.FromSeconds(1));
+            Parser _parser = new Parser(WebRequestType.Http, new Uri("http://yandex.ru"));
+            
+            HttpParserWebRequest httpParser = new HttpParserWebRequest();
+            foreach (var item in _parser)
+            {
+                var t = item.GetType();
+            }
+            WebPageContent content = httpParser.LoadPageContent(_parser, Encoding.UTF8, TimeSpan.FromSeconds(1));
             Assert.IsNotNull(content);
         }
     }
