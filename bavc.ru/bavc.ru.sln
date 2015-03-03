@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebParser", "WebParser\WebP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestWebParser", "UnitTestWebParser\UnitTestWebParser.csproj", "{6901F0A5-9BA9-42F1-9431-446F148F3945}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CA_Mediamarkt_Play", "..\..\..\..\CA_Mediamarkt_Play\CA_Mediamarkt_Play\CA_Mediamarkt_Play.csproj", "{88D13D2D-DC3A-4714-BF64-9FBFA6569F3A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{6901F0A5-9BA9-42F1-9431-446F148F3945}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6901F0A5-9BA9-42F1-9431-446F148F3945}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6901F0A5-9BA9-42F1-9431-446F148F3945}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88D13D2D-DC3A-4714-BF64-9FBFA6569F3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88D13D2D-DC3A-4714-BF64-9FBFA6569F3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88D13D2D-DC3A-4714-BF64-9FBFA6569F3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88D13D2D-DC3A-4714-BF64-9FBFA6569F3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

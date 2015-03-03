@@ -19,4 +19,22 @@ namespace WebParser.BavcNetFramework.DataTypes
         Sock4a,
         Sock5
     }
+
+    /// <summary>
+    /// Типы для странниц
+    /// </summary>
+    public enum WebPageType
+    {
+        Main,
+        Catalog
+    }
+
+    public enum WebPageStatus
+    {
+        New,
+        Busy,
+        Ok,
+        Error,
+        Unknow
+    }
 }
